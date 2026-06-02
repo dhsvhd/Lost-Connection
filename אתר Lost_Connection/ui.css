@@ -1,0 +1,67 @@
+.action-btn {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #10b981;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 10px;
+  z-index: 1001;
+}
+
+.edit-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.edit-btn {
+  background: #f59e0b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* רספונסיביות */
+@media (max-width: 768px) {
+  .login-box {
+    padding: 25px;
+  }
+  .calendar-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .month-navigation {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .day-cell {
+    min-height: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .day-cell {
+    min-height: 70px;
+    padding: 6px;
+  }
+  .days-grid {
+    gap: 3px;
+  }
+}

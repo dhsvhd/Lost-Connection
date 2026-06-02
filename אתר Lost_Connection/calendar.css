@@ -1,0 +1,107 @@
+.calendar-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 15px;
+}
+
+.calendar-title {
+  color: #38bdf8;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.month-navigation {
+  display: flex;
+  gap: 10px;
+}
+
+.month-btn {
+  padding: 8px 20px;
+  background: rgba(56,189,248,0.2);
+  color: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.days-grid {
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+  gap: 10px;
+}
+
+.day-header {
+  text-align: center;
+  padding: 15px;
+  background: rgba(56,189,248,0.1);
+  border-radius: 10px;
+  color: #38bdf8;
+  font-weight: 600;
+}
+
+.day-cell {
+  background: rgba(255,255,255,0.05);
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 120px;
+  cursor: pointer;
+}
+
+.day-number {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.event-item {
+  background: rgba(56,189,248,0.15);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+
+.today {
+  border: 2px solid #38bdf8;
+}
+
+.has-events {
+  border-left: 4px solid #10b981;
+}
+
+/* מודלים */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.modal-title {
+  color: #38bdf8;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
